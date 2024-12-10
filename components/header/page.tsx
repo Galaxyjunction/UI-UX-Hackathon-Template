@@ -15,6 +15,16 @@ const Header = () => {
     <nav className="relative w-full bg-white py-6 md:w-full mt-6 overflow-x-hidden">
       {/* Top Navbar Section: Avion Text, Search Bar, and User Icon */}
       <div className="flex justify-between items-center border-b border-lightGray pb-4 px-4 md:px-0">
+        {/* Mobile Menu Toggle Button */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-lg"
+          aria-label="Toggle Navigation Menu"
+        >
+          {/* Add a hamburger icon or use text "Menu" */}
+          ☰
+        </button>
+
         {/* Search Bar (Left) */}
         <div className="flex items-center space-x-4">
           <button
@@ -139,6 +149,7 @@ const Header = () => {
 };
 
 export default Header;
+
 
 
 

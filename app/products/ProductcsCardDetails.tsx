@@ -224,3 +224,5 @@ const ProductCardDetails = (
 };
 
 export default ProductCardDetails;
+
+

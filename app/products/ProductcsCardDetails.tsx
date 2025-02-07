@@ -3,9 +3,9 @@ import { CardProps } from "@/types/index";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import ProductCard from "../reuseableComponents/ProductCard";
-import Features from "../heroSection/Features";
-import SignUp from "..//heroSection/SignUp";
+import ProductCard from "@/components/reuseableComponents/ProductCard";
+import Features from "@/components/heroSection/Features";
+import SignUp from "@/components/heroSection/SignUp";
 
 export async function getData() {
   const response = await fetch("/api/product");
@@ -13,7 +13,9 @@ export async function getData() {
   return data;
 }
 
-const ProductCardDetails = () => {
+const ProductCardDetails = (
+
+) => {
   const params = useParams();
   const id = params.id;
   const productId = id;
@@ -222,3 +224,5 @@ const ProductCardDetails = () => {
 };
 
 export default ProductCardDetails;
+
+

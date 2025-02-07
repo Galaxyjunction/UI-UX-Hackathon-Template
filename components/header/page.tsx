@@ -38,8 +38,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search"
-              className="w-48 md:w-64 border placeholder:text-white bg-black/40 text-white border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black font-trolley" 
-              // Ensure 'font-trolley' is defined for the correct font
+              className="w-48 md:w-64 border placeholder:text-white bg-black/40 text-white border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black font-trolley"
             />
           )}
         </div>
@@ -56,9 +55,8 @@ const Header = () => {
               <Image
                 src="/images/user.png"
                 alt="User Profile Icon"
-                width={16}
-                height={16}
-                className="w-[24px] h-[24px]"
+                width={24}
+                height={24}
               />
             </div>
           </Link>
@@ -68,9 +66,8 @@ const Header = () => {
               <Image
                 src="/images/cart.png"
                 alt="Cart Icon"
-                width={16}
-                height={16}
-                className="w-[24px] h-[24px]"
+                width={24}
+                height={24}
               />
             </div>
           </Link>
@@ -83,73 +80,50 @@ const Header = () => {
           isOpen ? "block" : "hidden"
         } md:flex flex-row justify-center mt-4 space-x-8 md:ml-16 px-4 md:px-0`}
       >
-        <Link
-          href="/"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Home
         </Link>
-        <Link
-          href="/"
-          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Plant Pots
         </Link>
-        <Link
-          href="/"
-          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Ceramics
         </Link>
-        <Link
-          href="/"
-          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Tables
         </Link>
-        <Link
-          href="/"
-          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Chairs
         </Link>
-        <Link
-          href="/"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Crockery
         </Link>
-        <Link
-          href="/"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Tableware
         </Link>
-        <Link
-          href="/"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           Cutlery
         </Link>
-        <Link
-          href="/products"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/products" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           All Products
         </Link>
-        <Link
-          href="/about"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
+        <Link href="/about" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
           About
         </Link>
       </div>
+
+      {/* Search Box */}
+      {isSearchOpen && (
+        <div className="mt-4">
+          <input
+            type="text"
+            placeholder="Search"
+            className="w-full border placeholder:text-white bg-black/40 text-white border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+          />
+        </div>
+      )}
     </nav>
   );
 };
 
 export default Header;
-
-
-
-

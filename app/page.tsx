@@ -1,5 +1,5 @@
 import Features from "@/components/heroSection/Features";
-import Touch from "@/components/heroSection/Touch";
+import GetInTouch from "@/components/heroSection/GetInTouch";
 import Hero from "@/components/heroSection/Hero";
 import Listing from "@/components/heroSection/Listing";
 import PopularProducts from "@/components/heroSection/PopularProducts";
@@ -11,9 +11,9 @@ export default function Home() {
       <Hero />
       <Features />
       <Listing />
-      <PopularProducts/>
+      <PopularProducts />
       <SignUp />
-      <Touch />
+      <GetInTouch />
     </div>
   );
 }

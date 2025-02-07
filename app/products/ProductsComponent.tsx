@@ -258,8 +258,7 @@ const ProductsComponent = () => {
         <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
 
         <ProductCard
-
-          image="SilkyVase"
+          image="SlikVase"
           heading="The Silky Vase"
           price="125"
           id="3"
@@ -311,10 +310,10 @@ const ProductsComponent = () => {
           id="1"
         />
 
-        <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2"/>
+        <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
 
         <ProductCard
-          image="SilkyVase"
+          image="SlikVase"
           heading="The Silky Vase"
           price="125"
           id="3"

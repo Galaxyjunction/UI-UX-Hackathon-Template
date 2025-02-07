@@ -7,7 +7,7 @@ const Features = () => {
         What makes our brand different
       </h4>
 
-      <div className="flex flex-col md:flex-row">
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:pr-0 md:pr-[3rem] gap-[2rem]">
         <FeatureCard
           image="Delivery"
           heading="Next day as standard"

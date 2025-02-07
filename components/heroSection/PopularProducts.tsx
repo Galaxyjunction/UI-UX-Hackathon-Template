@@ -43,7 +43,7 @@ const PopularProducts = () => {
             </SwiperSlide>
             <SwiperSlide>
               <ProductCard
-                image="SlikVase"
+                image="SilkyVase"
                 heading="The Silky Vase"
                 price="125"
                 id="3"
@@ -72,7 +72,6 @@ const PopularProducts = () => {
                 className="object-cover"
               />
             </div>
-            
             <div className="mt-4 flex flex-col gap-[8px]">
               <h4 className="font-clash font-normal text-xl text-darkPrimary">
                 The Popular suede sofa
@@ -81,9 +80,8 @@ const PopularProducts = () => {
                 £ 980
               </p>
             </div>
-
-            <Link 
-              href={`/products/id10`} 
+            <Link
+              href={`/products/id10`}
               className="absolute inset-0 z-10 group-hover:bg-black/30 transition-colors duration-300 flex items-end justify-center pb-4"
             >
               <span className="bg-white/80 px-6 py-2 rounded-md text-darkPrimary hover:bg-white transition-colors">

@@ -1,4 +1,5 @@
-import { CardProps } from "@/types/components";
+import { CardProps } from "@/types/index";
+
 import Image from "next/image";
 
 const FeatureCard: React.FC<CardProps> = ({ image, heading, para }) => {

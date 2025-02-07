@@ -63,7 +63,6 @@ const Footer = () => {
           Copyright 2022 Avion LTD
         </p>
         <div className="hidden md:flex mt-10 mr-4 gap-3">
-          <FaLinkedin className="w-[24px] h-[24px] text-white" />
           <FaFacebookSquare className="w-[24px] h-[24px] text-white" />
           <FaInstagram className="w-[24px] h-[24px] text-white" />
           <FaSkype className="w-[24px] h-[24px] text-white" />
@@ -76,4 +75,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
